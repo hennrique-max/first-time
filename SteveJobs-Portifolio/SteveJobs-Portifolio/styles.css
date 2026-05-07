@@ -1,0 +1,44 @@
+/*Box Model Global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+header,
+#contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f4f4f4;
+}
+
+.perfil-img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 2);
+  width: 100px;
+  height: 120px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* Responsivo Básico */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
